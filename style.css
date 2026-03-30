@@ -23,6 +23,8 @@ img {
     gap: 15px;
 }
 
+
+
 .cards {
     display: flex;
     justify-content: center;
@@ -32,13 +34,24 @@ img {
     border: 2px solid black;
     border-radius: 5px;
     cursor: pointer;
+    transition: all 0.2s ease;
 }
+
+.cards:hover {
+    background-color:  #e3f2fd;
+
+}
+
+.cards:active {
+    background-color: #90caf9;
+}
+
 
 #result {
     margin-top: 30px;
     width: 945px;
     height: 150px;
-    background-color: #ecececbb;
+    background-color: #f5f5f5bb;
     border: 2px solid black;
     border-radius: 5px;
 
@@ -57,4 +70,9 @@ img {
     display: flex;
     justify-content: end;
     margin-right: 20px;    
+}
+
+#button-reset {
+    background-color: white;
+    border-radius: 2px;
 }

@@ -58,9 +58,22 @@ function play(playerChoice) {
     let result = checkWinner(playerChoice, computerChoice);
 
     if (result === "Player wins") playerScore++;
+    
     else if (result === "Computer wins") computerScore++;
 
+
+
     resultText.textContent = result;
+
+
+    if (result === "Player wins") {
+        resultText.style.color = "#2e7d32";
+    } else if (result === "Computer wins") {
+        resultText.style.color = "#c62828";
+    } else {
+        resultText.style.color = "#1565c0";
+    }
+
     playerScoreDom.textContent = "Your score: " + playerScore;
     computerScoreDom.textContent =
         "Computer score: " + computerScore + " " + `(the computer chose: ${computerChoice})`;
