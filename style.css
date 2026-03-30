@@ -1,0 +1,60 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #bedadbbb;
+    height: 100vh;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+img {
+    max-width: 200px;
+}
+
+#choices {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    object-fit: cover;
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#result {
+    margin-top: 30px;
+    width: 945px;
+    height: 150px;
+    background-color: #ecececbb;
+    border: 2px solid black;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#score-txt {
+    margin-left: 20px;
+    font-size: large;
+
+}
+
+#box-2 {
+    display: flex;
+    justify-content: end;
+    margin-right: 20px;    
+}
