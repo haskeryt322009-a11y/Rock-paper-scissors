@@ -87,6 +87,7 @@ const reset = document.querySelector("#button-reset");
 
 reset.addEventListener("click", () => {
     resultText.textContent = "choose one";
+    resultText.style.color = "#000000"
     playerScore = 0;
     computerScore = 0;
 
